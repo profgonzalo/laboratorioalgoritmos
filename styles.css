@@ -1,0 +1,406 @@
+body {
+    font-family: "Figtree", sans-serif;
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    background-image: url("imagenes/banner.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 200px;
+    padding: 20px;
+    text-align: left;
+}
+
+.titulos {
+    padding-left: 10%;
+    margin-top: 20vh;
+}
+
+h1 {
+    font-size: 48px;
+    color: #9DD1F1;
+}
+
+h2 {
+    font-size: 30px;
+    color: #c6e3f5;
+}
+
+h3 {
+    font-size: 24px;
+    color: #C8E0F4;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 20px;
+    color: #fff;
+}
+
+#icono{
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+/* Barra de navegación*/
+nav {
+    background-color: #087E8B;
+}
+
+#btn-menu{
+    color: #fff;
+    display: none;
+    background-color: #07525a;
+    border: none;
+    width: 100%;
+    height: 30px;
+}
+
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+  
+#menu li {
+    width: 200px;
+    margin: 5px;
+}
+
+#menu li:hover{
+    width: 200px;
+    background-color: #055c66;
+    margin: 5px;
+}
+
+#menu li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+section {
+    padding: 30px;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Información */
+.informacion {
+    background-color: #031927;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.fotoprofesor img{
+    border-radius: 50%;
+    overflow: hidden;  
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Introducción */
+.introduccion {
+    background-color: #031927;
+    padding: 5%;
+    
+}
+
+.introduccion ul li{
+    font-size: 19px;
+    color: #fff;
+}
+
+.temas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista{
+    padding: 0 5% 0 0;
+}
+
+.fotoalgoritmo{
+    width: 30%;
+    max-width: 300px;
+    margin: 5%;
+}
+  
+/* Noticias */
+.noticias {
+    background-color: #193445;
+    padding: 5%;
+}
+
+
+.noticias ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.noticias li {
+    margin-bottom: 20px;
+}
+
+/* Teoría y ejercicios*/
+
+.buscador
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#buscar{
+    width: 50%;
+    border-style: none;
+    text-decoration: none;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#reestablecer{
+    float: right;
+    margin-right: 5%;
+    background-color: #087E8B;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#reestablecer:hover {
+    background-color: #07525a;
+  }
+
+.bimestres{
+    background-color: #193445;
+    padding: 5%;
+}
+
+.bimestres h2{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.unidad{
+    padding-bottom: 15px;
+}
+
+.tema{
+    display: flex;
+    align-items: center;
+}
+
+.tema a{
+    color: #fff;
+}
+
+.nombre-tema {
+    flex-grow: 1;
+}
+
+.pdf {
+    margin-right: 5%;
+    font-size: 30px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #001332;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Tablets */
+@media screen and (max-width: 810px) {
+    header {
+        height: 30vh;
+        padding: 10px;
+    }
+
+    .titulos {
+        margin-top: 10vh;
+        margin: 10% 5%;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    #btn-menu{
+        display: none;
+    }
+
+    #menu{
+        display: flex;
+        align-items: center;
+    }
+
+    #menu li {
+        width: 100%;
+    }
+
+    #menu li a {
+        font-size: 16px;
+    }
+    #menu li:hover{
+        width: 100%;
+    }
+
+    .fotoprofesor {
+        width: 50%;
+        min-width: 200px;
+        margin: 0 auto;
+    }
+
+    .introduccion{
+        flex-wrap: wrap;
+    }
+
+    .fotoalgoritmo{
+        width: 100%;
+        height: 100%;
+        min-width: 200px;
+        min-height: auto;
+    }
+
+    .pdf {
+        font-size: 30px;
+    }
+
+}
+
+/* Celulares */
+@media screen and (max-width: 480px) {
+    header {
+        height: 75%;
+        padding: 5px;
+    }
+
+    .titulos {
+        margin-top: 20%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    #btn-menu{
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu li {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #menu li a {
+        font-size: 14px;
+    }
+    #menu li:hover{
+        margin: 0;
+    }
+
+    .informacion{
+        flex-wrap: wrap;
+    }
+    
+    .temas{
+        display: block;
+        text-align: center;
+    }
+    
+    .introduccion{
+        flex-wrap: wrap;
+    }
+
+    .lista{
+        
+        text-align: left;
+    }
+
+    .introduccion ul li{
+        font-size: 15px;
+    }
+
+    .fotoalgoritmo{
+        width: 90%;
+        height: auto;      
+        min-width: 1%;
+    }
+    .fotoprofesor
+    {
+        width: 90%;
+    }
+
+    .pdf {
+        margin-right: 0%;
+        font-size: 25px;
+    }
+
+    .buscador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #buscar{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    
+    #reestablecer{
+        margin-right: 0;
+    }
+
+}

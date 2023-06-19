@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <title>Algoritmos Prof. Navarro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='script.js'></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="titulos">
+            <h1>Laboratorio de Algoritmos</h1>
+            <h2>Prof. Navarro Gonzalo</h2>
+        </div>
+    </header>
+    
+    <nav>
+        <button id="btn-menu" onclick="mostrarMenu()"></button>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="teoria.html">Teoría</a></li>
+            <li><a href="ejercicios.html">Ejercicios</a></li>
+            <li><a href="extras.html">Extras</a></li>
+         </ul>
+    </nav>
+    <main>
+        <section class="introduccion">
+            <h2>Teoría</h2>
+            <p>Aca encontrarán el material teórico trabajado durante el año.</p>
+            <p>Explorá cada bimestre para acceder a los contenidos de cada  unidad.</p>
+        </section>
+    
+        <section class="bimestres">
+            <div class="buscador">
+                <input type="text" id="buscar" placeholder="Buscar tema" oninput="filtrarTemas(this.value)">
+                <button id="reestablecer" onclick="reestablecerFiltro()">Reestablecer</button>
+            </div>
+            <h2>1° Bimestre</h2>
+            <div class="unidad"> <h3>Unidad 1</h3>
+            <div class="tema">
+                <p class="nombre-tema">Introducción a Algoritmos</p>
+                <div class="pdf">
+                    <a href="teoria/algoritmos.pdf" target="_blank"><iconify-icon icon="mingcute:pdf-line"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="tema">
+                <p class="nombre-tema">Pseudocódigo</p>
+                <div class="pdf">
+                    <a href="teoria/pseudocodigo.pdf" target="_blank"><iconify-icon icon="mingcute:pdf-line"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="tema">
+                <p class="nombre-tema">Lenguajes</p>
+                <div class="pdf">
+                    <a href="teoria/lenguajes.pdf" target="_blank"><iconify-icon icon="mingcute:pdf-line"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+
+            <div class="unidad"> <h3>Unidad 2</h3>
+            <div class="tema">
+                <p class="nombre-tema">Introducción a C#</p>
+                <div class="pdf">
+                    <a href="teoria/introduccionsharp.pdf" target="_blank"><iconify-icon icon="mingcute:pdf-line"></iconify-icon></a>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>Derechos de Autor &copy; 2023 Gonzalo Navarro</p>
+    </footer>
+
+</body>
+</html>
