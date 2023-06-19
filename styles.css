@@ -1,5 +1,6 @@
+
 body {
-    font-family: "Figtree", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 
@@ -10,8 +11,7 @@ header {
     background-position: center;
     height: 50vh;
     min-height: 200px;
-    padding: 20px;
-    text-align: left;
+    padding: 2vh 0;
 }
 
 .titulos {
@@ -38,7 +38,6 @@ h3 {
 p{
     font-size: 20px;
     color: #fff;
-    text-align: justify;
 }
 
 #icono{
@@ -57,7 +56,7 @@ nav {
     background-color: #07525a;
     border: none;
     width: 100%;
-    height: 30px;
+    height: 40px;
 }
 
 #menu{
@@ -69,14 +68,12 @@ nav {
 }
   
 #menu li {
-    width: 200px;
-    margin: 5px;
+    width: 150px;
+    margin: 4px;
 }
 
 #menu li:hover{
-    width: 200px;
     background-color: #055c66;
-    margin: 5px;
 }
 
 #menu li a {
@@ -84,43 +81,32 @@ nav {
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
     color: #fff;
-}
-
-section {
-    padding: 30px;
-    margin: 0;
-    background-color: #f5f5f5;
 }
 
 /* Introducción */
 .introduccion {
     background-color: #031927;
     padding: 5%;
-    
 }
 
 .introduccion ul li{
     font-size: 19px;
-    color: #fff;
+    color: #c6e3f5
 }
 
 .temas{
     display: flex;
-    justify-content: space-between;
 }
 
 .lista{
     padding: 0 5% 0 0;
 }
 
-.fotoalgoritmo{
-    width: 30%;
-    height: 30%;
-    max-width: 200px;
-    margin: 0% 5%;
+#img-algoritmo{
+    width: 50%;
+    height: 50%;
+    max-width: 250px;
 }
   
 /* Noticias */
@@ -129,11 +115,9 @@ section {
     padding: 5%;
 }
 
-
 .noticias ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 .noticias li {
@@ -151,29 +135,18 @@ section {
 }
 
 #buscar{
-    width: 50%;
-    border-style: none;
-    text-decoration: none;
-    padding: 7px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 70%;
 }
 
-#reestablecer{
-    float: right;
-    margin-right: 5%;
-    background-color: #087E8B;
+#boton{
+    border-color: #055c66;
+    border-width: 2px;
     color: white;
-    border: none;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-#reestablecer:hover {
-    background-color: #07525a;
-  }
+#boton:hover {
+    background-color: #055c66;
+}
 
 .bimestres{
     background-color: #193445;
@@ -182,7 +155,7 @@ section {
 
 .bimestres h2{
     padding-bottom: 15px;
-    text-align: center;
+    color: #51abe2
 }
 
 .unidad{
@@ -195,15 +168,14 @@ section {
 }
 
 .tema a{
-    color: #fff;
+    color: #087E8B
 }
 
 .nombre-tema {
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .pdf {
-    margin-right: 5%;
     font-size: 30px;
 }
 
@@ -217,30 +189,25 @@ section {
 
 .fotoprofesor img{
     border-radius: 50%;
-    overflow: hidden;  
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+    overflow: hidden; 
 }
 
 /* Pie de página */
 footer {
-    background-color: #001332;
+    background-color: #03363b;
     color: #fff;
-    padding: 10px;
+    padding: 8px 0;
     text-align: center;
 }
 
 
 /* Tablets */
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 768px) {
     header {
-        height: 30vh;
-        padding: 10px;
+        height: 35vh;
     }
 
     .titulos {
-        margin-top: 10vh;
         margin: 10% 5%;
         padding: 0;
     }
@@ -265,11 +232,6 @@ footer {
         display: none;
     }
 
-    #menu{
-        display: flex;
-        align-items: center;
-    }
-
     #menu li {
         width: 100%;
     }
@@ -282,19 +244,12 @@ footer {
     }
 
     .fotoprofesor {
-        width: 50%;
-        min-width: 200px;
-        margin: 0 auto;
+        margin: 0 5%;
     }
 
-    .introduccion{
-        flex-wrap: wrap;
-    }
-
-    .fotoalgoritmo{
-        width: 100%;
-        height: 100%;
-        min-width: 100px;
+    #img-algoritmo{
+        width: 60%;
+        height: 60%;
     }
 
     .pdf {
@@ -340,7 +295,6 @@ footer {
 
     #menu li {
         width: 100%;
-        height: auto;
         margin: 0;
     }
 
@@ -352,20 +306,14 @@ footer {
     }
 
     .informacion{
-        flex-wrap: wrap;
+        display: block;
     }
     
     .temas{
         display: block;
-        text-align: center;
-    }
-    
-    .introduccion{
-        flex-wrap: wrap;
     }
 
     .lista{
-        
         text-align: left;
     }
 
@@ -373,10 +321,8 @@ footer {
         font-size: 15px;
     }
 
-    .fotoalgoritmo{
-        width: 90%;
-        height: auto;      
-        min-width: 1%;
+    #img-algoritmo{
+        width: 70%; 
     }
     .fotoprofesor
     {
@@ -389,17 +335,15 @@ footer {
     }
 
     .buscador{
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     #buscar{
-        width: 80%;
+        width: 100%;
         margin-bottom: 10px;
     }
     
-    #reestablecer{
+    #boton{
         margin-right: 0;
     }
 

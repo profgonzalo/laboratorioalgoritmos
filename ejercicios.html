@@ -5,6 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <title>Algoritmos Prof. Navarro</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <script src='script.js'></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -28,7 +30,7 @@
             <li><a href="extras.html">Extras</a></li>
          </ul>
     </nav>
-    
+
     <main>
         <section class="introduccion">
             <h2>Ejercicios</h2>
@@ -37,8 +39,8 @@
     
         <section class="bimestres">
             <div class="buscador">
-                <input type="text" id="buscar" placeholder="Buscar tema" oninput="filtrarTemas(this.value)">
-                <button id="reestablecer" onclick="reestablecerFiltro()">Reestablecer</button>
+                <input type="text" class="input-group-text" id="buscar" placeholder="Buscar tema" oninput="filtrarTemas(this.value)">
+                <button type="button" class="btn" id="boton" onclick="reestablecerFiltro()">Reestablecer</button>
             </div>
             <h2>1° Bimestre</h2>
             <div class="unidad"> <h3>Unidad 2</h3>
