@@ -38,6 +38,7 @@ h3 {
 p{
     font-size: 20px;
     color: #fff;
+    text-align: justify;
 }
 
 #icono{
@@ -65,7 +66,6 @@ nav {
     padding: 0;
     display: flex;
     justify-content: center;
-    
 }
   
 #menu li {
@@ -95,22 +95,6 @@ section {
     background-color: #f5f5f5;
 }
 
-/* Información */
-.informacion {
-    background-color: #031927;
-    display: flex;
-    justify-content: space-between;
-    padding: 5%;
-}
-
-.fotoprofesor img{
-    border-radius: 50%;
-    overflow: hidden;  
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 /* Introducción */
 .introduccion {
     background-color: #031927;
@@ -134,8 +118,9 @@ section {
 
 .fotoalgoritmo{
     width: 30%;
-    max-width: 300px;
-    margin: 5%;
+    height: 30%;
+    max-width: 200px;
+    margin: 0% 5%;
 }
   
 /* Noticias */
@@ -222,6 +207,22 @@ section {
     font-size: 30px;
 }
 
+/* Información */
+.informacion {
+    background-color: #031927;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.fotoprofesor img{
+    border-radius: 50%;
+    overflow: hidden;  
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 /* Pie de página */
 footer {
     background-color: #001332;
@@ -293,8 +294,7 @@ footer {
     .fotoalgoritmo{
         width: 100%;
         height: 100%;
-        min-width: 200px;
-        min-height: auto;
+        min-width: 100px;
     }
 
     .pdf {
