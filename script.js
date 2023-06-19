@@ -40,27 +40,3 @@ function reestablecerFiltro() {
     document.getElementById("buscar").value = "";
     filtrarTemas("");
 }
-
-  // Función para animar las noticias
-function animarNoticias() {
-    const newsItems = document.querySelectorAll('.noticias li');
-    let delay = 0;
-
-    newsItems.forEach(item => {
-        item.style.opacity = 0;
-        item.style.transform = 'translateY(20px)';
-        item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        item.style.transitionDelay = `${delay}s`;
-        delay += 0.1;
-    });
-
-    setTimeout(() => {
-        newsItems.forEach(item => {
-            item.style.opacity = 1;
-            item.style.transform = 'translateY(0)';
-        });
-    }, 500);
-}
-
-// Llamamos a la función de animación al cargar la página
-window.addEventListener('load', animarNoticias);

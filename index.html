@@ -60,16 +60,17 @@
 
     <section class="noticias">
         <h2>Noticias</h2>
+        <!---
         <ul>
-            <!-- Espacio para noticias más recientes 
+            Espacio para noticias más recientes 
             <li>
                 <h3> </h3>
                 <p> </p>
             </li>                
-            -->
+            
             <li>
                 <h3>Miércoles 21/6 - Evaluación</h3>
-                <p>Este día se hara la evaluación práctica con todos los contenidos vistos hasta ahora.</p>
+                <p>Este día se hará la evaluación práctica con todos los contenidos vistos hasta ahora.</p>
             </li>
             <li>
                 <h3>Miércoles 14/6 - Repaso</h3>
@@ -80,6 +81,40 @@
                 <p>No asistiré ya que me encuentro de licencia por exámenes. ¡Nos vemos la próxima clase!</p>
             </li>
         </ul>
+        -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <strong>Miércoles 21/6 - Evaluación</strong>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">Este día se hará la evaluación práctica con todos los contenidos vistos hasta ahora.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <strong>Miércoles 14/6 - Repaso</strong>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">Practicaremos los temas que entran en la evaluación.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <strong>Suspensión de clases el día Miércoles 17/5</strong>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">No asistiré ya que me encuentro de licencia por exámenes. ¡Nos vemos la próxima clase!</div>
+              </div>
+            </div>
+          </div>
+
     </section>
 
         <section class="informacion">
@@ -90,7 +125,7 @@
                 <p><iconify-icon id="icono" icon="mdi:instagram"></iconify-icon> @gonza.nav</p>
             </div>
             <div class="fotoprofesor">
-                <img src="imagenes/profesor.jpg" class="img-fluid" alt="Gonzalo Navarro">
+                <img src="imagenes/profesor1.png" class="img-fluid" alt="Gonzalo Navarro">
             </div>
         </section>
 

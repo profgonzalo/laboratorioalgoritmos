@@ -35,6 +35,10 @@ h3 {
     margin-bottom: 5px;
 }
 
+h5{
+    color: #000;
+}
+
 p{
     font-size: 20px;
     color: #fff;
@@ -45,7 +49,7 @@ p{
     vertical-align: middle;
 }
 
-/* Barra de navegación*/
+/* Barra de navegación */
 nav {
     background-color: #087E8B;
 }
@@ -79,6 +83,7 @@ nav {
 #menu li a {
     display: block;
     text-align: center;
+    font-weight: bold;
     padding: 10px;
     text-decoration: none;
     color: #fff;
@@ -115,6 +120,7 @@ nav {
     padding: 5%;
 }
 
+/*
 .noticias ul {
     list-style-type: none;
     padding: 0;
@@ -123,6 +129,12 @@ nav {
 .noticias li {
     margin-bottom: 20px;
 }
+*/
+
+.accordion-header > .accordion-button{
+    background-color: #92bdc2;
+}
+
 
 /* Teoría y ejercicios*/
 
@@ -183,13 +195,15 @@ nav {
 .informacion {
     background-color: #031927;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5%;
 }
 
 .fotoprofesor img{
     border-radius: 50%;
-    overflow: hidden; 
+    overflow: hidden;
+    margin-left: 5%;
+    max-width: 400px;
 }
 
 /* Pie de página */
@@ -198,6 +212,24 @@ footer {
     color: #fff;
     padding: 8px 0;
     text-align: center;
+}
+
+
+/* Carrusel */
+#extras{
+    padding-bottom: 1px;
+}
+.carrusel{
+    padding: 5%;
+    background-color: #031927;
+    margin: 0;
+}
+
+.carrusel h5{
+    background-color: #fff;
+}
+.carrusel p{
+    background-color: #031927
 }
 
 
@@ -243,8 +275,9 @@ footer {
         width: 100%;
     }
 
-    .fotoprofesor {
-        margin: 0 5%;
+    .fotoprofesor img {
+        width: 70%;
+        min-width: 180px;
     }
 
     #img-algoritmo{
@@ -270,19 +303,19 @@ footer {
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     h2 {
-        font-size: 21px;
+        font-size: 24px;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     p{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     #btn-menu{
@@ -304,10 +337,6 @@ footer {
     #menu li:hover{
         margin: 0;
     }
-
-    .informacion{
-        display: block;
-    }
     
     .temas{
         display: block;
@@ -322,9 +351,17 @@ footer {
     }
 
     #img-algoritmo{
-        width: 70%; 
+        width: 70%;
+        margin: 0;
+        padding: 0;
     }
-    .fotoprofesor
+
+    .informacion{
+        display: block;
+        justify-content: center;
+    }
+
+    .fotoprofesor img
     {
         width: 90%;
     }
