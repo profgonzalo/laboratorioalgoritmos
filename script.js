@@ -11,23 +11,24 @@ function mostrarMenu(){
     }
 }
 
+//Para que al cambiar el tamaño el nav vuelva a como era
 window.addEventListener("resize", function() {
     if (window.innerWidth > 480) {
       menu.style.display = "flex";
     }
-    else if (window.innerWidth <= 480) {
+    else if (window.innerWidth <= 480 & menu.style.display == "flex") {
         menu.style.display = "none";
       }
   });
 
-  // Buscador de teoría
-  function filtrarTemas(textoBusqueda) {
+// Buscador de teoría
+function filtrarTemas(textoBusqueda) {
     const temas = document.getElementsByClassName("tema");
 
     for (let i = 0; i < temas.length; i++) {
         const tema = temas[i];
         const nombreTema = tema.getElementsByClassName("nombre-tema")[0].textContent.toLowerCase();
-      
+        
         if (nombreTema.includes(textoBusqueda.toLowerCase())) {
             tema.style.display = "flex";
         } else {
@@ -36,6 +37,7 @@ window.addEventListener("resize", function() {
     }
 }
 
+// Para borrar el texto escrito en el input
 function reestablecerFiltro() {
     document.getElementById("buscar").value = "";
     filtrarTemas("");
